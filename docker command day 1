@@ -59,3 +59,14 @@ exit
    53  cd /var/lib/docker/containers/06dfafe9b18b5062653a33b234721f129cd250a35d84de4095802b8219ebf924
    54  ls
    55  cat 06dfafe9b18b5062653a33b234721f129cd250a35d84de4095802b8219ebf924-json.log
+###docker networking
+25  docker network create my_app_net
+   26  docker network ls
+   27  docker network inspect my_app_net
+   28  docker run -d --name new_nginx --network my_app_net nginx:alpine
+   29  docker run -d --name proxy --network my_app_net nginx:alpine
+   30  docker ps
+ 
+   32  docker exec -it proxy ping new_nginx
+   33  docker exec -it new_nginx ping proxy
+   34  docker network inspect my_app_net
