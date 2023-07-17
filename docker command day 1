@@ -43,4 +43,13 @@ usermod -aG username docker
    42  docker logs -f d3e
 
 
-
+####how to loging inside a container
+45  docker run -d -p 3306:3306 --name db -e MYSQL_RANDOM_ROOT_PASSWORD=true mysql
+   46  docker ps
+   47  docker logs db
+   48  docker exec -it db bash
+mysql -u root -p
+####get the password from the logs and copy it paste it
+#####then exit two times
+exit
+exit
