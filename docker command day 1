@@ -17,3 +17,11 @@ usermod -aG username docker
     7  curl localhost
     8  curl localhost:82
 
+###custom name to your container
+ 11  docker ps -a
+   12  docker run -d -p 83:80 --name=webhost nginx
+   13  docker ps
+   14  history
+   15  docker run -d -p 84:80 --name=webhost nginx
+
+
