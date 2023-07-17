@@ -1,3 +1,10 @@
 sudo -i
 ##3for user escalation
 usermod -aG username docker
+
+###launc your first docker container
+ 3  docker container run --publish 80:80 --detach nginx
+    4  docker ps
+    5  docker images
+    6  docker container run --publish 80:80 --detach nginx
+
