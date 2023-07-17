@@ -53,3 +53,9 @@ mysql -u root -p
 #####then exit two times
 exit
 exit
+####docker logs file lcoation
+ 51  docker ps
+   52  docker container inspect db
+   53  cd /var/lib/docker/containers/06dfafe9b18b5062653a33b234721f129cd250a35d84de4095802b8219ebf924
+   54  ls
+   55  cat 06dfafe9b18b5062653a33b234721f129cd250a35d84de4095802b8219ebf924-json.log
