@@ -38,6 +38,9 @@ usermod -aG username docker
    28  docke rps -a
    29  docker ps -a
    30  history
+###to check the logs
+41  docker logs d3e
+   42  docker logs -f d3e
 
 
 
