@@ -7,4 +7,13 @@ usermod -aG username docker
     4  docker ps
     5  docker images
     6  docker container run --publish 80:80 --detach nginx
+#####docker command
+1  clear
+    2  docker run -p 81:80 -d nginx
+    3  docker ps
+    4  docker run -p 82:80 -d httpd
+    5  docker images
+    6  docker ps
+    7  curl localhost
+    8  curl localhost:82
 
