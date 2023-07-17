@@ -24,4 +24,20 @@ usermod -aG username docker
    14  history
    15  docker run -d -p 84:80 --name=webhost nginx
 
+###container vs process
+ 18  docker ps
+   19  docker run -p 85:80 nginx
+   20  clear
+   21  docker run --name mongo -d mongo
+   22  docker ps
+   23  clear
+   24  docker top mongo
+   25  ps aux
+   26  kill -9 10425
+   27  docker ps
+   28  docke rps -a
+   29  docker ps -a
+   30  history
+
+
 
