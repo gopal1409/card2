@@ -1,1 +1,3 @@
 sudo -i
+##3for user escalation
+usermod -aG username docker
