@@ -1,0 +1,8 @@
+##custom image creation
+131  apt install default-jdk
+  132  apt install maven
+  133  git
+  134  git clone  git clone https://github.com/gopal1409/springtomcatchatapp.git
+  135  cd springtomcatchatapp/
+  136  mvn clean package
+  137  cd target/
