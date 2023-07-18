@@ -1,5 +1,6 @@
 ###create our first mysql db
  114  docker run -d --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=true -v mysql-db:/var/lib/mysql mysql:8.0.33
+dokcer volume ls
   115  docker ps
   116  docker exec -it mysql bash
 ##3loging to the db
