@@ -6,3 +6,19 @@
   135  cd springtomcatchatapp/
   136  mvn clean package
   137  cd target/
+###convert the applicsation
+nano dockerfile
+#####add this content
+FROM openjdk:11
+MAINTAINER gopal<gopal1409@gmail.com>
+RUN apt-get update -y
+WORKDIR /app
+VOLUME /tmp
+EXPOSE 8080
+ARG JAR_FILE=/target/*.jar
+COPY $JAR_FILE webapp.jar
+ENTRYPOINT ["java","-jar","webapp.jar"]
+###save the file using ctrl x then press y and enter
+docker build -t chatapp:v1 .
+#########
+docker container run chatapp:v1 -d -p 80:8080 
